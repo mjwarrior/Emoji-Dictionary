@@ -11,6 +11,8 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
    
+    @IBOutlet weak var definitionLabel: UILabel!
+    
     @IBOutlet weak var emojiLabel: UILabel!
     
     var emoji = "No Emoji"
@@ -20,6 +22,75 @@ class DefinitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         emojiLabel.text = emoji
+   
+        if emoji == "😀" {
+            definitionLabel.text = "Smiley face"
+    
+        }
+        
+        if emoji == "😃" {
+            definitionLabel.text = "Smiley"
+            
+        }
+        
+        if emoji == "😄" {
+            definitionLabel.text = "Grinning emoji"
+            
+        }
+
+        if emoji == "😆" {
+            definitionLabel.text = "Excited grin"
+            
+        }
+
+        if emoji == "😅" {
+            definitionLabel.text = "Smile with sweat drop"
+            
+        }
+
+        if emoji == "😂" {
+            definitionLabel.text = "Laughing and crying"
+            
+        }
+
+        if emoji == "🤣" {
+            definitionLabel.text = "Laughing hard"
+            
+        }
+        
+        if emoji == "☺️" {
+            definitionLabel.text = "Embarrasing grin "
+        }
+
+     
+        if emoji == "😊" {
+            definitionLabel.text = "Happiness"
+            
+        }
+
+        
+        
+        if emoji == "😇" {
+            definitionLabel.text = "Angelic smiley"
+            
+        }
+
+        
+        
+        if emoji == "🙂" {
+            definitionLabel.text = "Smile"
+            
+        }
+
+        
+        if emoji == "🙃" {
+            definitionLabel.text = "Upside down smile"
+            
+        }
+
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
